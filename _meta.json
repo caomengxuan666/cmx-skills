@@ -1,7 +1,7 @@
 {
   "name": "cmx-skills",
-  "version": "1.3.0",
-  "description": "🧬 我的技术DNA技能包 - 从14万行代码中蒸馏出的编程习惯、代码风格、工具配置、思维模式、项目组织和架构设计",
+  "version": "1.4.0",
+  "description": "🧬 我的技术DNA技能包 - 从14万行代码中蒸馏出的编程习惯、代码风格、工具配置、思维模式、项目组织、架构设计和核心基础设施",
   "author": "caomengxuan666",
   "license": "MIT",
   "keywords": [
@@ -15,7 +15,11 @@
     "learning-resources",
     "project-organization",
     "architecture-design",
-    "technical-decisions"
+    "technical-decisions",
+    "core-infrastructure",
+    "c++20-concepts",
+    "modern-cpp",
+    "cross-platform"
   ],
   "dependencies": {
     "openclaw": ">=2026.4.0"
@@ -31,6 +35,7 @@
     "learning-resources.md",
     "project-organization-analysis.md",
     "technical-decisions-architecture.md",
+    "core-module-analysis.md",
     "LICENSE",
     "README.md"
   ],
@@ -43,35 +48,42 @@
     "code-lines": 140710,
     "commits-analyzed": 286,
     "projects": ["WinuxCmd", "AstraDB"],
-    "files-analyzed": ["137 commands", "146 test files", "41 docs"],
+    "files-analyzed": ["137 commands", "146 test files", "41 docs", "10 core modules"],
+    "core-modules": ["command_macros.h", "command_context.cppm", "pipeline.cppm", "console.cppm", "file_io.cppm"],
     "last-updated": "2026-04-23"
   }
 }
-EOF && echo "" && echo "=== 提交更新 ===" && git add . && git commit -m "feat(analysis): add project organization and technical decisions analysis v1.3.0
+EOF && echo "" && echo "=== 提交更新 ===" && git add . && git commit -m "feat(analysis): add core module infrastructure analysis v1.4.0
 
-基于深度项目分析，添加：
-- project-organization-analysis.md: 项目组织结构、构建系统、测试策略、文档实践
-- technical-decisions-architecture.md: 技术决策框架、架构设计、并发模型、存储设计
+基于深度分析WinuxCmd核心模块，添加：
+- core-module-analysis.md: Core模块基础设施深度分析
 
 分析发现:
-1. 137个命令的模块化组织模式
-2. 146个测试文件的测试策略
-3. NO SHARING架构设计哲学
-4. 量化技术决策框架 (性能40%、质量30%、兼容性20%、效率10%)
-5. 完整的工程实践体系 (CMake配置、代码质量工具链、CI/CD流程)
+1. 命令注册宏系统: C++20 Concepts + 编译时验证的复杂宏系统
+2. 跨平台抽象层: 线程局部缓存 + 管道状态检测优化
+3. 现代化C++实践: std::expected错误处理 + 模块化设计
+4. 性能优化策略: 编译时计算 + 零拷贝设计 + 内存分配优化
 
-具体细节:
-- WinuxCmd: 75,579行代码，模块化命令实现
-- AstraDB: 65,131行代码，分层架构设计
-- 构建系统: CMake 3.30 + 多平台支持
-- 测试策略: 自定义测试框架 + 完整覆盖
-- 代码质量: Google风格 + 严格静态分析
+技术细节:
+- 174行command_macros.h: 复杂的命令注册宏系统
+- 线程局部存储: 控制台句柄缓存减少系统调用
+- 管道关闭检测: 优化cat命令在大输入管道中的性能
+- C++23 std::expected: 现代化错误处理模式
+- 编译时验证: 选项元数据编译时检查
+- 模块化设计: C++20 Modules应用
+
+具体优化案例:
+1. 控制台句柄缓存: 线程局部存储避免重复GetStdHandle调用
+2. 管道状态检测: 提前退出避免无效的大数据处理
+3. 编译时哈希: 命令名编译时哈希优化查找
+4. 小对象栈分配: 减少堆内存分配开销
 
 价值:
-- 提供可复用的项目组织模板
-- 分享系统级架构设计经验
-- 建立工程最佳实践参考
-- 帮助团队建立高质量开发流程
+- 提供工业级C++基础设施设计参考
+- 展示现代化C++特性实际应用案例
+- 分享高性能系统编程优化技巧
+- 建立核心模块设计最佳实践
+- 帮助理解复杂宏系统和编译时编程
 
-版本升级: v1.2.0 → v1.3.0
-Closes #3" && echo "" && echo "=== 推送到GitHub ===" && git push origin main 2>&1
+版本升级: v1.3.0 → v1.4.0
+Closes #4" && echo "" && echo "=== 推送到GitHub ===" && git push origin main 2>&1
