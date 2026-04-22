@@ -1,0 +1,32 @@
+{
+  "name": "cmx-skills",
+  "version": "1.1.0",
+  "description": "🧬 我的技术DNA技能包 - 从14万行代码中蒸馏出的编程习惯、代码风格和工具配置",
+  "author": "caomengxuan666",
+  "license": "MIT",
+  "keywords": [
+    "c++",
+    "google-style",
+    "system-programming",
+    "best-practices",
+    "code-templates"
+  ],
+  "dependencies": {
+    "openclaw": ">=2026.4.0"
+  },
+  "files": [
+    "SKILL.md",
+    "_meta.json",
+    "config/",
+    "templates/",
+    "developer-habits.md",
+    "toolchain-configs.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "templates": {
+    "perfect-cpp-header": "templates/perfect-cpp-header.h",
+    "perfect-cpp-source": "templates/perfect-cpp-source.cpp",
+    "perfect-commit": "templates/perfect-commit-template.md"
+  }
+}

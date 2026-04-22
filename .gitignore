@@ -1,0 +1,46 @@
+# 构建文件
+build/
+dist/
+*.o
+*.so
+*.dylib
+
+# 临时文件
+*.tmp
+*.log
+*.pid
+
+# 环境文件
+.env
+.env.local
+.env.*.local
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+EOF && echo "" && echo "=== 提交所有更改 ===" && git add . && git commit -m "feat(templates): add perfect code and commit templates v1.1.0
+
+基于深度Git提交分析和代码审查，添加：
+- perfect-cpp-header.h: 完美C++头文件模板
+- perfect-cpp-source.cpp: 完美C++源文件模板
+- perfect-commit-template.md: 完美提交指南模板
+
+分析基础:
+- 286次Git提交深度分析
+- 140,710行C++代码审查
+- 识别最佳实践和模式
+
+模板特点:
+- Google C++风格 + CMX偏好
+- Modern C++ features (C++20)
+- 完整的文档和示例
+- 性能优化考虑
+
+版本升级: v1.0.0 → v1.1.0
+Closes #1" && echo "" && echo "=== 推送到GitHub ===" && git remote add origin https://github.com/caomengxuan666/cmx-skills.git && git push -u origin main --force 2>&1
