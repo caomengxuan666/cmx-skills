@@ -1,0 +1,25 @@
+{
+  "ownerId": "caomengxuan666",
+  "slug": "cmx-cpp-expert-skills",
+  "version": "1.0.0",
+  "publishedAt": 1745362800000,
+  "name": "CMX C++ Expert Skills",
+  "description": "基于caomengxuan666的GitHub仓库分析，蒸馏出的C++专家技能集合。包含现代C++开发、系统编程、数据库设计等专家级技能。",
+  "tags": ["c++", "system-programming", "database", "performance", "expert"],
+  "author": "OpenClaw AI Assistant",
+  "category": "development",
+  "compatibility": {
+    "openclaw": ">=2026.4.21"
+  },
+  "dependencies": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caomengxuan666"
+  },
+  "analysisSource": {
+    "repositories": ["WinuxCmd", "AstraDB", "BTreeX", "libgossip", "resp-cli", "winuxsh"],
+    "totalLinesOfCode": 140710,
+    "analysisDate": "2026-04-22",
+    "primaryLanguage": "C++"
+  }
+}

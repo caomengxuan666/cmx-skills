@@ -1,0 +1,135 @@
+{
+  "skill": {
+    "name": "CMX C++ Expert Skills",
+    "version": "1.0.0",
+    "enabled": true,
+    "debug": false,
+    "log_level": "info",
+    "auto_update": true,
+    "update_frequency": "monthly"
+  },
+  
+  "user_profile": {
+    "github_username": "caomengxuan666",
+    "real_name": "CMX",
+    "analysis_date": "2026-04-22",
+    
+    "technical_expertise": {
+      "primary_language": "C++",
+      "language_level": "expert",
+      "cpp_standards": ["C++23", "C++20", "C++17"],
+      "secondary_languages": ["Rust", "Shell", "Python"],
+      
+      "specializations": [
+        "system_programming",
+        "database_systems", 
+        "performance_optimization",
+        "concurrent_programming",
+        "cross_platform_development"
+      ]
+    },
+    
+    "project_characteristics": {
+      "scale": "medium_to_large",
+      "complexity": "high",
+      "code_quality": "production_grade",
+      "documentation": "technical",
+      "testing": "comprehensive"
+    },
+    
+    "work_patterns": {
+      "commit_frequency": "daily",
+      "active_hours": [16, 17, 21],
+      "development_intensity": "high",
+      "project_lifespan": "long_term",
+      "collaboration_style": "independent_expert"
+    }
+  },
+  
+  "skill_configuration": {
+    "cpp_development": {
+      "preferred_compiler": "clang",
+      "compiler_version": "19.1",
+      "optimization_level": "-O2",
+      "warning_level": "strict",
+      "sanitizers_enabled": true,
+      
+      "code_style": {
+        "indentation": 2,
+        "naming_convention": "snake_case",
+        "header_style": "pragma_once",
+        "include_order": ["system", "library", "local"],
+        "const_correctness": "strict"
+      },
+      
+      "project_structure": {
+        "build_system": "cmake",
+        "test_framework": "catch2",
+        "documentation_tool": "doxygen",
+        "package_manager": "vcpkg",
+        "ci_cd": "github_actions"
+      }
+    },
+    
+    "system_programming": {
+      "platforms": ["windows", "linux"],
+      "apis": ["win32", "posix"],
+      "concurrency_model": "multi_thread",
+      "memory_management": "smart_pointers",
+      "error_handling": "exceptions_and_error_codes"
+    },
+    
+    "performance_optimization": {
+      "profiling_tools": ["perf", "vtune"],
+      "optimization_focus": ["cpu", "memory", "io"],
+      "benchmarking": true,
+      "cache_aware": true,
+      "vectorization": true
+    }
+  },
+  
+  "learning_recommendations": {
+    "skill_development": [
+      {
+        "skill": "gpu_programming",
+        "priority": "medium",
+        "reason": "扩展高性能计算能力",
+        "resources": ["cuda", "opencl", "sycl"]
+      },
+      {
+        "skill": "formal_methods", 
+        "priority": "low",
+        "reason": "关键系统验证",
+        "resources": ["tla+", "coq", "lean"]
+      },
+      {
+        "skill": "compiler_design",
+        "priority": "medium",
+        "reason": "语言工具开发",
+        "resources": ["llvm", "clang", "mlir"]
+      }
+    ],
+    
+    "project_ideas": [
+      "高性能网络协议栈",
+      "分布式缓存系统", 
+      "实时数据处理引擎",
+      "操作系统级性能工具"
+    ]
+  },
+  
+  "integration": {
+    "with_openclaw": {
+      "agent_routing": "coding_agent",
+      "model_preference": "deepseek_reasoner",
+      "workspace": "/home/cmx/.openclaw/workspace-coding"
+    },
+    
+    "development_workflow": {
+      "code_review": "cmx_style",
+      "testing_strategy": "performance_focused",
+      "documentation_standard": "technical_detailed",
+      "deployment_pipeline": "automated_optimized"
+    }
+  }
+}
