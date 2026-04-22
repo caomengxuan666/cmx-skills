@@ -428,6 +428,38 @@ cmx-skills reweight --based-on recent-activity
 3. **主观判断**: 包含一定的技术评估判断
 4. **动态变化**: 用户技能会随时间发展变化
 
+## 参考文献
+
+### 数据来源与引用
+本技能包的分析基于以下数据来源和技术参考，详细引用信息请参考 `references.md` 文件。
+
+#### 主要数据来源
+1. **GitHub仓库分析**
+   - WinuxCmd: https://github.com/caomengxuan666/WinuxCmd
+   - AstraDB: https://github.com/caomengxuan666/AstraDB
+   - libgossip: https://github.com/caomengxuan666/libgossip
+
+2. **外部PR贡献**
+   - PyTorch: https://github.com/pytorch/pytorch
+   - Microsoft vcpkg: https://github.com/microsoft/vcpkg
+   - concurrentqueue: https://github.com/cameron314/concurrentqueue
+   - 其他项目: 详见references.md
+
+#### 技术标准参考
+1. **C++语言标准**: ISO/IEC 14882:2020 (C++20), ISO/IEC 14882:2023 (C++23)
+2. **编码规范**: Google C++ Style Guide, LLVM Coding Standards
+3. **构建系统**: CMake Documentation, vcpkg Documentation
+
+#### 完整引用
+完整的参考文献列表、数据来源详细信息和引用格式请查看:
+```bash
+# 查看完整参考文献
+openclaw skill view cmx-skills references.md
+
+# 或直接访问GitHub
+https://github.com/caomengxuan666/cmx-skills/blob/main/references.md
+```
+
 ## 支持与反馈
 
 ### 问题报告
@@ -464,4 +496,5 @@ cmx-skills create-profile --name "database_expert" \
 **技术准确性**: 基于140,710行C++代码 + 286提交 + 120PR (10个外部)分析  
 **个性化程度**: 9个维度的深度代码模式识别  
 **版本**: v1.6.0 (外部PR贡献分析)  
-**总分析字数**: 51,007字深度技术内容
+**总分析字数**: 61,487字深度技术内容 (包含references)  
+**参考文献**: 完整引用列表见 references.md
